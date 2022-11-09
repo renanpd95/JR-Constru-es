@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap');
+
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    height: 100%;
+    background-color: #111;
+}
+body{
+    background-color: #000;
+}
+
+.clear {
+    clear: both;
+}
+
+.background-projects {
+    background: #111;
+    width: 100%;
+    text-align: center;
+    background-color: #111;
+}
+
+
+.background-projects .elipse-3 {
+    position: absolute;
+    margin-top: 10vw;
+}
+
+.background-projects .elipse-3 img{
+    width: 30vw;
+
+    transition-duration: 10s;
+    animation: trasform 2s infinite alternate-reverse;
+}
+@keyframes trasform {
+    0%{
+        opacity: 0.2;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 0.9;
+        transform: translateY(90px);
+    }
+}
+
+.background-projects .elipse-4 {
+    position: absolute;
+    margin-top: 10vw;
+    right: 1vw;
+}
+
+.background-projects .elipse-4 img{
+    width: 30vw;
+
+    transition-duration: 10s;
+    animation: trasform 2s infinite alternate-reverse;
+}
+@keyframes trasform {
+    0%{
+        opacity: 0.2;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 0.9;
+        transform: translateY(90px);
+    }
+}
+
+
+.background-projects .logo-projects img{
+    width: 15vw;
+    margin-top: 10vw;
+}
+.background-projects .info-projects{
+    width: 100%;
+    padding-top: 3vw;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #fff,#000,#fff,#000, #fff, #000,#fff);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 10s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(223, 170, 170, 0.555);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    50%{
+        background-position: 500%;
+
+    }
+    75%{
+        background-position:-500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  .background-projects .info-projects h2{
+    margin: 1vw;
+    font-size: 5vw;
+}
+
+.projects{
+    margin-top: 0%;
+}
+.projects-index {
+    padding-left: 3vw;
+    position: relative;
+    text-align: left;
+
+}
+.projects-index a{
+    text-decoration: none;
+    
+}
+
+.projects-index p{
+    display: inline-block;
+    background: linear-gradient(109.92deg, #FFFFFF 36.7%, rgba(255, 255, 255, 0.5) 76.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2vw;
+}
+
+.projects-index u{
+    display: inline-block;
+    background: linear-gradient(109.92deg, #FFFFFF 36.7%, rgba(255, 255, 255, 0.5) 76.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: 2vw;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1000px){
+    .projects-index p{
+        
+        font-size: 6vw;
+    }
+    
+    .projects-index u{
+        font-size: 6vw;
+    }
+
+    .background-projects .info-projects h2{
+        margin: 1vw;
+        font-size: 17vw;
+    }
+
+    .background-projects .logo-projects img{
+        width: 35vw;
+        margin-top: 10vw;
+    }
+
+}
+
+

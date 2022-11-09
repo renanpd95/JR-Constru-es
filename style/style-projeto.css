@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;500;700;900&display=swap');
+
+
+* {
+   
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,body{
+    height: 100%;
+    background: #111;
+}
+
+
+.clear {
+    clear: both;
+}
+.post .figure-1 {
+    width: 100%;
+    padding: 2vw; 
+}
+
+.post .figure-1 a img{
+    width: 50%;
+    box-shadow: 0vw 0.1vw 0.2vw 0.1vw #e70808; 
+    transition: .2s all ease-in;  
+}
+.post .figure-1 a img:hover{
+    box-shadow: 0vw 0.1vw 0.2vw 0.3vw #e70808;   
+    
+}
+
+.post .figure-2{
+    display: inline-block;
+    width: 12%;
+    margin: 0.2vw;
+}
+
+.post .figure-2 a img{   
+    width: 100%;
+    max-height: 18vh;
+    margin: 0.3vw;
+    box-shadow: 0vw 0.1vw 0.2vw 0.1vw #e708089c; 
+    transition: .2s all ease-in;  
+}
+.post .figure-2 a img:hover{
+    box-shadow: 0vw 0.1vw 0.2vw 0.2vw #e70808;   
+    
+}
+
+footer {
+    margin:0%;
+    background: black;
+}
+
+
+
+@media screen and (max-width: 1000px){
+
+    .post .figure-1 a img{
+        width: 90%;
+        box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw #e70808; 
+        transition: .2s all ease-in;  
+    }   
+
+    .post .figure-2{
+        display: inline-block;
+        width: 22%;
+        margin: 0.7vw 0.1vw 5vw 0.1vw;
+    }
+
+    .post .figure-2 a img{
+        width: 98%;
+        max-height:14vw;
+        box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw #e708089c; 
+        transition: .2s all ease-in;  
+    }
+
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/style-projetos.css">
+    <link rel="stylesheet" href="/style/style-projeto.css">
+    <link rel="stylesheet" href="/style/bootstrap.css">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.12/dist/js/uikit-icons.min.js"></script>
+
+
+    <link rel="icon" href="img/logo.ico"><!--LOGO-NAV-->
+
+    <title>JR Construção</title>
+</head>
+<body>
+
+    <header> 
+        <div class="background-projects">
+
+            <div class="elipse-3">
+                <img src="img/Ellipse-3.png" alt="elipse">
+            </div>
+            <div class="elipse-4">
+                <img src="img/Ellipse-3.png" alt="elipse">
+            </div>
+            <div id="logo" class="logo-projects">
+                <img src="img/logo JR.png" alt="logo">
+            </div>
+            <div class="info-projects">
+              <h2>PROJETO-6</h2>
+            </div>
+
+            <section class="projects-index">
+                <a href="/index.html"><p>INICIO</p></a>
+                <p>--></p>
+                <a href="/projetos.html"><p>PROJETOS</p></a>
+                <p>--></p>
+                <u>PROJETO-6</u>
+            </section>
+            
+            <section class="post">
+
+                    <div>
+                      <figure class="figure-1">
+                        <a href="img/projeto-6/FOTO-1.jpg" data-caption="Ring of Kerry, County Kerry, Ireland" data-alt="Ring of Kerry, County Kerry, Ireland">
+                          <img src="img/projeto-6/FOTO-1.jpg" alt="Ring of Kerry, County Kerry, Ireland" uk-img>
+                        </a>
+                      </figure>
+                    </div>
+                    
+                    <div class="figures-2">
+                      <figure class="figure-2">
+                        <a href="img/projeto-6/FOTO-2.jpg" data-caption="Ring of Kerry, County Kerry, Ireland" data-alt="Ring of Kerry, County Kerry, Ireland">
+                          <img src="img/projeto-6/FOTO-2.jpg" alt="Ring of Kerry, County Kerry, Ireland" uk-img>
+                        </a>
+                      </figure>
+
+                      <figure class="figure-2">
+                        <a href="img/projeto-6/FOTO-3.jpg" data-caption="Ring of Kerry, County Kerry, Ireland" data-alt="Ring of Kerry, County Kerry, Ireland">
+                          <img src="img/projeto-6/FOTO-3.jpg" alt="Ring of Kerry, County Kerry, Ireland" uk-img>
+                        </a>
+                      </figure>
+                    
+                      <figure class="figure-2">
+                        <a href="img/projeto-6/FOTO-4.jpg" data-caption="Ring of Kerry, County Kerry, Ireland" data-alt="Ring of Kerry, County Kerry, Ireland">
+                          <img src="img/projeto-6/FOTO-4.jpg" alt="Ring of Kerry, County Kerry, Ireland" uk-img>
+                        </a>
+                      </figure>
+
+                      <figure class="figure-2">
+                        <a href="img/projeto-6/FOTO-5.jpg" data-caption="Ring of Kerry, County Kerry, Ireland" data-alt="Ring of Kerry, County Kerry, Ireland">
+                          <img src="img/projeto-6/FOTO-5.jpg" alt="Ring of Kerry, County Kerry, Ireland" uk-img>
+                        </a>
+                      </figure>
+
+                      <figure class="figure-2">
+                        <a href="img/projeto-6/FOTO-6.jpg" data-caption="Ring of Kerry, County Kerry, Ireland" data-alt="Ring of Kerry, County Kerry, Ireland">
+                          <img src="img/projeto-6/FOTO-6.jpg" alt="Ring of Kerry, County Kerry, Ireland" uk-img>
+                        </a>
+                      </figure>
+                      
+                      <figure class="figure-2">
+                        <a href="img/projeto-6/FOTO-7.jpg" data-caption="Ring of Kerry, County Kerry, Ireland" data-alt="Ring of Kerry, County Kerry, Ireland">
+                          <img src="img/projeto-6/FOTO-7.jpg" alt="Ring of Kerry, County Kerry, Ireland" uk-img>
+                        </a>
+                      </figure>
+
+                      <figure class="figure-2">
+                        <a href="img/projeto-6/FOTO-8.jpg" data-caption="Ring of Kerry, County Kerry, Ireland" data-alt="Ring of Kerry, County Kerry, Ireland">
+                          <img src="img/projeto-6/FOTO-8.jpg" alt="Ring of Kerry, County Kerry, Ireland" uk-img>
+                        </a>
+                      </figure>
+
+                    </div>
+            </section>
+
+        </div><!--background-projects-->
+       
+    </header><!--header-->
+
+
+    <footer>
+      <div class="background-image">
+
+          <div class="logo-footer">
+              <img src="img/logo JR.png" alt="logo">
+          </div>          
+     
+          <div class="nome-criador text-center">
+              <a href="#"><p>Criado por Renan Domiciano | Todos os direitos Reservados 2022</p></a>
+          </div>
+
+          <div class="up">
+              <a href="#logo"><img src="/img/up-arrow.png" alt="up"></a>
+          </div>
+
+      </div>
+    </footer>
+
+
+    <script>
+    const postLightbox = UIkit.lightbox(".post");
+    const ukActiveClass = "uk-active";
+
+    UIkit.util.on(document, "beforeshow", function (e) {
+      const target = e.target;
+      const lightboxItems = target.querySelectorAll(".uk-lightbox-items li").length;
+      let markup = '<ul class="uk-dotnav">';
+      for (let i = 0; i < lightboxItems; i++) {
+        markup += '<li><a href=""></a></li>';
+      }
+      markup += "</ul>";
+      const dotNav = document.createElement("div");
+      dotNav.setAttribute("class", "uk-position-top-center");
+      dotNav.innerHTML = markup;
+      target.appendChild(dotNav);
+      target.classList.add("uk-light");
+    });
+
+    UIkit.util.on(document, "itemshown", function (e) {
+      const target = e.target;
+      const dotNav = document.querySelector(".uk-dotnav");
+      const dotNavActiveItem = dotNav.querySelector("li.uk-active");
+      if (dotNavActiveItem) {
+        dotNavActiveItem.classList.remove(ukActiveClass);
+      }
+      let index = [...target.parentElement.children].indexOf(target);
+      dotNav.querySelector(`li:nth-child(${++index})`).classList.add(ukActiveClass);
+    });
+
+    document.addEventListener("click", function (e) {
+      const target = e.target;
+      if (target.tagName.toLowerCase() === "a" && target.closest(".uk-dotnav")) {
+        e.preventDefault();
+        const parentListItem = target.parentElement;
+        const index = [...parentListItem.parentElement.children].indexOf(
+          parentListItem
+        );
+        postLightbox.show(index);
+      }
+    });
+    </script>
+    
+</body>
+</html>

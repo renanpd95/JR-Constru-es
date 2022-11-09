@@ -31,10 +31,11 @@ header {
     background-repeat: no-repeat;
     background-color: #000;
     animation: image 15s infinite alternate;
+    transition: 20s;
 }
 @keyframes image {
     0% {
-      background-image: url("/img/banner-1.jpg");
+      background-image: url("/img/projeto-6/FOTO-1.jpg");
     }
     50% {
         background-image: url("/img/banner-2.jpg");
@@ -63,8 +64,6 @@ header {
     width: 100%;
     padding-left: 5vw;
     padding-top: 4vw;
-
-
 }
 
 .logo img{
@@ -362,6 +361,340 @@ marquee {
     color: #FFFFFF;
 }
 
+.projects{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.projects h3{
+    margin-top: 5vw;
+    font-size: 5vw;
+    background: linear-gradient(109.92deg, #FFFFFF 36.7%, rgba(255, 255, 255, 0.5) 76.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;  
+}
+.projects .project-1{
+    display: inline-block;
+}
+
+.projects .project-1 a{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    width: 30vw;
+    margin: 1vw;
+    box-shadow: 0.1vw 0.1vw 0.5vw 0.1vw #e70808; 
+    transition: .2s all ease-in;  
+}
+.projects .project-1 a:hover{
+    box-shadow: 0.1vw 0.1vw 0.5vw 0.3vw #e70808;   
+    
+}
+
+.projects .project-1 img{
+    display: inline-block;
+    width: inherit;    
+}
+
+.projects .project-1 p{
+    color: white;
+    opacity: 0;
+    transition: .5s;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 0%;
+    padding-top: 30%;
+    width: 100%;
+    height: 100%;
+    bottom: unset;
+    background-color: rgba(24, 23, 23, 0.671);
+}
+.projects .project-1 p:hover{
+    opacity: .9;
+}
+.projects .ver-mais a{
+    font-size: 2vw;
+    text-decoration: none;
+    background: linear-gradient(109.92deg, #FFFFFF 36.7%, rgba(255, 255, 255, 0.5) 76.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    
+}
+.projects .ver-mais h4{
+    font-size: 2vw;
+    background: linear-gradient(109.92deg, #FFFFFF 36.7%, rgba(255, 255, 255, 0.5) 76.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: inline-block;
+}
+.projects .ver-mais h5{
+    font-size: 2vw;
+    background: linear-gradient(109.92deg, #FFFFFF 36.7%, rgba(255, 255, 255, 0.5) 76.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    display: inline-block;
+    transition: 0.2s;
+    opacity: 0;
+}
+.projects .ver-mais a:hover h5{
+    opacity: 8;
+}
+
+.midia marquee{
+    position: absolute;
+
+}
+
+
+.midia marquee img{
+    width: 40vw;
+    animation: opacity 1s infinite alternate;
+    transition-duration: 20s;
+}
+
+@keyframes opacity { 
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+        opacity: 1;
+      }
+  }
+
+
+  .midia marquee a{
+    animation: opacity 10s infinite alternate-reverse;
+    transition-duration: 20s;
+}
+
+.midia{
+    margin-top: 10vw;
+}
+  
+.midia .midia-celular,
+.midia .midia-info {
+    display: inline-block;
+}
+
+.midia .instagram-1{
+    position: absolute;
+    animation: trasform 2s infinite alternate-reverse;
+}
+@keyframes trasform {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(42px);
+    }
+}
+
+.midia .instagram-1 img{
+    width: 8vw;
+    margin-left: 5vw;
+}
+
+.midia .instagram-2{
+    position: absolute;
+    z-index: 3;
+    animation: trasform 1s infinite alternate-reverse;
+}
+@keyframes trasform {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(42px);
+    }
+}
+
+.midia .instagram-2 img{
+    width: 15vw;
+    margin-top: 19vw;
+}
+
+.midia .instagram-3{
+    position: absolute;
+    z-index: 1;
+    animation: trasform 3s infinite alternate-reverse;
+    
+}
+@keyframes trasform {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(42px);
+    }
+}
+
+.midia .instagram-3 img{
+    width: 10vw;
+    margin-top: 8vw;
+    margin-left: 22vw;
+    animation: rotate 3s infinite alternate-reverse;
+
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(100deg);
+    }
+}
+
+.midia .instagram-4{
+    position: absolute;
+    z-index: 3;
+    animation: trasform 2s infinite alternate-reverse;
+}
+@keyframes trasform {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+.midia .instagram-4 img{
+    width: 8vw;
+    margin-top: 30vw;
+    margin-left: 25vw;
+    animation: rotate 3s infinite alternate-reverse;
+
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(200deg);
+    }
+}
+
+.midia-celular{
+    z-index: 2;
+    position: relative;
+}
+
+.midia .midia-celular img {
+    width: 50vw;
+}
+
+
+.midia-info{
+    width: 40vw;
+    text-align: center;
+    line-height: 7vw;
+}
+
+.midia .midia-info p{
+    font-size: 6vw;
+    background: linear-gradient(109.92deg, #FFFFFF 36.7%, rgba(255, 255, 255, 0.5) 76.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.contato {
+    margin-top: 7vw;
+    text-align: center;
+}
+
+.contato .linha {
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 4vw;
+}
+.contato .linha img{
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation: opacity 1s infinite alternate;
+    transition-duration: 20s;
+}
+
+@keyframes opacity { 
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+        opacity: 1;
+      }
+  }
+
+.contato h3{
+    font-size: 5vw;
+    background: linear-gradient(109.92deg, #FFFFFF 36.7%, rgba(255, 255, 255, 0.5) 76.73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.contato .box2 a{
+    margin-left: 0%;
+}
+
+footer {
+    width: 100%;
+    height: 50vh;
+}
+footer .background-image {
+    position: absolute;
+    background-image: url("/img/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: inherit;
+    height:inherit;
+    text-align: center;
+}
+
+
+footer .nome-criador a{
+    text-decoration: none;
+}
+
+footer .nome-criador p{
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+    right: 25%;
+    font-size: 1vw;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.521);
+}
+
+footer .background-image .logo-footer {
+    padding-top: 5vw;
+}
+footer .background-image .logo-footer img{
+    width: 15vw;
+}
+
+footer .background-image .up {
+    position: absolute;
+    right: 1vw;
+}
+footer .background-image .up img {
+    width: 5vw;
+}
 
 
 
@@ -369,6 +702,16 @@ marquee {
 /*-------------------------------responsividade-----------------------------------*/
 
 @media screen and (max-width: 1000px){
+
+    .background-banner{
+        width: inherit;
+        height: inherit;
+        background-size: 130% 90%;
+        background-repeat: no-repeat;
+        background-color: #000;
+        animation: image 15s infinite alternate;
+
+    }
 
     .logo img{
         width: 30vw;
@@ -427,8 +770,128 @@ marquee {
         line-height: 6vw;
        
     }
+    .projects h3{
+       font-size: 10vw;
+       margin-top: 8vw;
+    }
+    .projects .project-1{
+        display: block;
+        margin: 0%;
+        width: 100%;
+        padding: 1vw;
+    }
+    
+    .projects .project-1 a{
+        width: 100%;
+        margin: 0%;
+    }
+    .projects .project-1 p{
+        color: white;
+        opacity: .9;
+        transition: .5s;
+        font-size: 6vw;
+        position: absolute;
+        top: 0%;
+        padding-top: 30%;
+        width: 100%;
+        height: 100%;
+        bottom: unset;
+        background-color: rgba(24, 23, 23, 0.671);
+    }
+
+    .projects .ver-mais h4{
+        margin-top: 5vw;
+        font-size: 10vw;
+
+    }
+    .projects .ver-mais h5{
+        font-size: 10vw;
+        animation: animati 1s infinite alternate;
+
+    }
+    @keyframes animati {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 9;
+        }
+    }
+
+    .midia {
+        text-align: center;
+        width: 100%;
+    }
+
+    .midia .midia-celular{
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .midia .midia-celular img{
+        width: 130%;
+        overflow: hidden;
+        
+        
+    }
+    .midia .midia-info p{
+        width: 100%;
+    }
+
+    .midia .midia-celular,
+    .midia .midia-info {
+    text-align: center;
+    width: 100%;
+    }
+
+    .midia .instagram-1 img{
+        width: 20vw;
+        margin-left: 5vw;
+    }
+    .midia .instagram-2 img{
+        width: 40vw;
+        margin-top:60vw;
+        margin-left: 5vw;
+    
+    }
+    .midia .instagram-3 img{
+        width: 30vw;
+        margin-left: 60vw;
+    }
+
+    .midia .instagram-4 img{
+        width: 25vw;
+        margin-top: 70vw;
+        margin-left: 65vw;
+
+    }
+    .midia .midia-info p{
+        font-size: 9vw;
+        line-height: 15vw;
+    }
+
+    .contato h3{
+        font-size: 9vw;
+
+    }
+
+    footer .nome-criador p{
+        font-size: 4vw;
+        left: auto;
+        right: auto;
+    }
+
+    footer .background-image .up img {
+        width: 20vw;
+    }
+
+    footer .background-image .logo-footer img{
+        width: 40vw;
+    }
+
 
 }
+
 
 @media screen and (max-width: 780px){
 
@@ -436,7 +899,7 @@ marquee {
     .background-banner{
         width: inherit;
         height: inherit;
-        background-size: 100% 100%;
+        background-size: 130% 90%;
         background-repeat: no-repeat;
         background-color: #000;
         animation: image 15s infinite alternate;
