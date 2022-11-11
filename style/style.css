@@ -304,7 +304,7 @@ marquee {
     position: absolute;
     margin-top: -20vw;
     left: 0%;
-    animation: opacity 3s infinite alternate;
+    animation: opacity 1.5s infinite alternate-reverse;
 }
 .elipse-1 img{
     width: 100%;
@@ -324,7 +324,7 @@ marquee {
     position: absolute;
     margin-top: -10vw;
     right: 0%;
-    animation: opacity 3.5s infinite alternate;
+    animation: opacity 1.5s infinite alternate;
 }
 .elipse-2 img{
     width: 100%;
